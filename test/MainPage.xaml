@@ -26,14 +26,74 @@
                 FontSize="23"
                 FontAttributes="Bold"/>
 
-            <Label Text="{Binding DisplaySitups}"
-               TextColor="Aqua"
-               Style="{StaticResource SubHeadline}"
-               SemanticProperties.HeadingLevel="Level2"
-               SemanticProperties.Description="Challenge" 
-               FontSize="20"
-               HeightRequest="150"/>
 
+
+
+            <!-- Push-Ups -->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Label Text="{Binding DisplayPushUps}"
+                       TextColor="Aqua"
+                       Style="{StaticResource SubHeadline}"
+                       SemanticProperties.HeadingLevel="Level3"
+                       SemanticProperties.Description="Challenge" 
+                       FontSize="20"/>
+                <Button Text="-"
+                        Clicked="SubPushUp"
+                        FontSize="20"/>
+                <Button Text="+"
+                        Clicked="AddPushUp"
+                        FontSize="20"/>
+            </HorizontalStackLayout>
+
+            <!-- Sit-Ups -->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Label Text="{Binding DisplaySitups}"
+                       TextColor="Aqua"
+                       Style="{StaticResource SubHeadline}"
+                       SemanticProperties.HeadingLevel="Level3"
+                       SemanticProperties.Description="Challenge" 
+                       FontSize="20"/>
+                <Button Text="-"
+                        Clicked="SubSitUp"
+                        FontSize="20"/>
+                <Button Text="+"
+                        Clicked="AddSitUp"
+                        FontSize="20"/>
+            </HorizontalStackLayout>
+
+            <!-- Squats -->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Label Text="{Binding DisplaySquats}"
+                       TextColor="Aqua"
+                       Style="{StaticResource SubHeadline}"
+                       SemanticProperties.HeadingLevel="Level3"
+                       SemanticProperties.Description="Challenge" 
+                       FontSize="20"/>
+                <Button Text="-"
+                        Clicked="SubSquat"
+                        FontSize="20"/>
+                <Button Text="+"
+                        Clicked="AddSquat"
+                        FontSize="20"/>
+            </HorizontalStackLayout>
+
+            <!-- Kilometers -->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Label Text="{Binding DisplayKM}"
+                       TextColor="Aqua"
+                       Style="{StaticResource SubHeadline}"
+                       SemanticProperties.HeadingLevel="Level3"
+                       SemanticProperties.Description="Challenge" 
+                       FontSize="20"/>
+                <Button Text="-"
+                        Clicked="SubKilometer"
+                        FontSize="20"/>
+                <Button Text="+"
+                        Clicked="AddKilometer"
+                        FontSize="20"/>
+                
+
+            </HorizontalStackLayout>
 
 
             <Label Text="Failure to complete this program by 00:00 may result in consequences"
@@ -45,12 +105,6 @@
                  
                    />
 
-            <VerticalStackLayout Padding="20">
-                <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
-                    <Button Text="-" Clicked="SubCounter"/>
-                    <Button Text="+" Clicked="AddCounter"/>
-                </HorizontalStackLayout>
-            </VerticalStackLayout>
 
 
         </VerticalStackLayout>
