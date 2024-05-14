@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+
+            <Label
+                Text="Welcome to Solo Leveling &#10; Fitness program" TextColor="OrangeRed"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level1"
+                SemanticProperties.Description="idk"
+                FontSize="30"
+                FontAttributes="Bold"
+                HeightRequest="100"/>
+
+            <Label
+                Text="Day: 1" TextColor="WhiteSmoke"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="idk"
+                FontSize="23"
+                FontAttributes="Bold"/>
+
+            <Label Text="{Binding DisplaySitups}"
+               TextColor="Aqua"
+               Style="{StaticResource SubHeadline}"
+               SemanticProperties.HeadingLevel="Level2"
+               SemanticProperties.Description="Challenge" 
+               FontSize="20"
+               HeightRequest="150"/>
+
+
+
+            <Label Text="Failure to complete this program by 00:00 may result in consequences"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level3"
+                SemanticProperties.Description="Challenge" 
+                FontSize="15"
+                FontAttributes="Italic"
+                 
+                   />
+
+            <VerticalStackLayout Padding="20">
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                    <Button Text="-" Clicked="SubCounter"/>
+                    <Button Text="+" Clicked="AddCounter"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
